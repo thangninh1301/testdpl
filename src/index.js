@@ -1,6 +1,6 @@
 const app = require("./ExpressBundle");
 const config = require("config");
-const port = process.env.PORT || config.get("PORT");
+const port = 3300
 const UsersRoutes= require('./routes/users.route');
 app.get("/", (req, res) => {
     res.send("Hello. I'm Forum-Api")
